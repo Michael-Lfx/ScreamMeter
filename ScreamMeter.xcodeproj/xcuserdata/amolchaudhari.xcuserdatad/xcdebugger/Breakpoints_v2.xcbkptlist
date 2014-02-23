@@ -131,12 +131,12 @@
                   symbolName = "__34-[ViewController shareOnfacebook:]_block_invoke"
                   moduleName = "ScreamMeter"
                   urlString = "file:///Users/amolchaudhari/Documents/XcodeProjects/ScreamMeter/ScreamMeter/ViewController.m"
-                  timestampString = "414833560.134108"
+                  timestampString = "414870495.518861"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "230"
                   endingLineNumber = "230"
-                  offsetFromSymbolStart = "22">
+                  offsetFromSymbolStart = "42">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -145,12 +145,12 @@
                   symbolName = "__34-[ViewController shareOnfacebook:]_block_invoke_2"
                   moduleName = "ScreamMeter"
                   urlString = "file:///Users/amolchaudhari/Documents/XcodeProjects/ScreamMeter/ScreamMeter/ViewController.m"
-                  timestampString = "414833560.134378"
+                  timestampString = "414870495.519137"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "231"
                   endingLineNumber = "231"
-                  offsetFromSymbolStart = "22">
+                  offsetFromSymbolStart = "42">
                </Location>
             </Locations>
          </BreakpointContent>

@@ -9,6 +9,8 @@
 #import "MMediaInterstitialAdViewController.h"
 #import "MMInterstitial.h"
 #import "AppDelegate.h"
+#import "MMAdView.h"
+
 
 @interface MMediaInterstitialAdViewController ()
 
@@ -30,7 +32,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     [self.navigationController setNavigationBarHidden:YES];
-    [self displayMMediaInterstatialAds];
+   // [self displayMMediaInterstatialAds];
+    [self displayMMediaRectangleAd];
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -40,6 +43,29 @@
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
         [self performSegueWithIdentifier:@"MainMenuViewController" sender:self];
     });
+    
+}
+
+-(void)displayMMediaRectangleAd{
+    
+    //Location Object
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    //MMRequest Object
+    MMRequest *request = [MMRequest requestWithLocation:appDelegate.locationManager.location];
+    
+    // Replace Your_APID with the APID provided to you by Millennial Media
+    MMAdView *banner = [[MMAdView alloc] initWithFrame:CGRectMake(10,20,300,250) apid:@"152730"
+                                    rootViewController:self];
+    [self.view addSubview:banner];
+    [banner getAdWithRequest:request onCompletion:^(BOOL success, NSError *error) {
+        if (success) {
+            NSLog(@"RECTANGLE AD REQUEST SUCCEEDED");
+        }
+        else {
+            NSLog(@"RECTANGLE AD REQUEST FAILED WITH ERROR: %@", error);
+        }
+    }];
     
 }
 

@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		5932E0CB18B45FA000984A16 /* FacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5932E0CA18B45FA000984A16 /* FacebookViewController.m */; };
-		5932E0CD18B4692C00984A16 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5932E0CC18B4692C00984A16 /* Social.framework */; };
+		5932E0CD18B4692C00984A16 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5932E0CC18B4692C00984A16 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5932E0D018B597E800984A16 /* PBJMediaWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5932E0CF18B597E800984A16 /* PBJMediaWriter.m */; };
 		5932E0D218B9CF2400984A16 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5932E0D118B9CF2400984A16 /* iAd.framework */; };
-		5932E0D918B9D50700984A16 /* libMMSDK_5.1.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5932E0D418B9D50700984A16 /* libMMSDK_5.1.1.a */; };
 		5932E0DD18B9D68500984A16 /* MMediaInterstitialAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5932E0DC18B9D68500984A16 /* MMediaInterstitialAdViewController.m */; };
-		5932E0DF18B9D7A700984A16 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5932E0DE18B9D7A700984A16 /* AdSupport.framework */; };
+		5932E0DF18B9D7A700984A16 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5932E0DE18B9D7A700984A16 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5932E0E118B9D7AF00984A16 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5932E0E018B9D7AF00984A16 /* AudioToolbox.framework */; };
 		5932E0E318B9D7BB00984A16 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5932E0E218B9D7BA00984A16 /* CFNetwork.framework */; };
 		5932E0E518B9D7C200984A16 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5932E0E418B9D7C200984A16 /* CoreLocation.framework */; };
 		5932E0E718B9D7CC00984A16 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5932E0E618B9D7CC00984A16 /* MediaPlayer.framework */; };
 		5932E0E918B9D7D200984A16 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5932E0E818B9D7D200984A16 /* MobileCoreServices.framework */; };
-		5932E0EB18B9D7DA00984A16 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5932E0EA18B9D7DA00984A16 /* PassKit.framework */; };
+		5932E0EB18B9D7DA00984A16 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5932E0EA18B9D7DA00984A16 /* PassKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5932E0ED18B9D7E100984A16 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5932E0EC18B9D7E100984A16 /* QuartzCore.framework */; };
 		5932E0EF18B9D7E900984A16 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5932E0EE18B9D7E900984A16 /* Security.framework */; };
-		5932E0F118B9D7F900984A16 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5932E0F018B9D7F900984A16 /* StoreKit.framework */; };
+		5932E0F118B9D7F900984A16 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5932E0F018B9D7F900984A16 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5932E0F318B9D81200984A16 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5932E0F218B9D81200984A16 /* SystemConfiguration.framework */; };
 		5932E0F518B9D83800984A16 /* SpeechKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5932E0F418B9D83800984A16 /* SpeechKit.framework */; };
 		5932E0F918B9DAC000984A16 /* libFlurry_4.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5932E0F818B9DAC000984A16 /* libFlurry_4.3.2.a */; };
+		5932E10018BA63A000984A16 /* libMMSDK_5.1.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5932E0FB18BA63A000984A16 /* libMMSDK_5.1.1.a */; };
 		596D275118AEF975005DC556 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596D275018AEF975005DC556 /* Foundation.framework */; };
 		596D275318AEF975005DC556 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596D275218AEF975005DC556 /* CoreGraphics.framework */; };
 		596D275518AEF975005DC556 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596D275418AEF975005DC556 /* UIKit.framework */; };
@@ -75,11 +75,6 @@
 		5932E0CE18B597E800984A16 /* PBJMediaWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBJMediaWriter.h; sourceTree = "<group>"; };
 		5932E0CF18B597E800984A16 /* PBJMediaWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBJMediaWriter.m; sourceTree = "<group>"; };
 		5932E0D118B9CF2400984A16 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
-		5932E0D418B9D50700984A16 /* libMMSDK_5.1.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMMSDK_5.1.1.a; sourceTree = "<group>"; };
-		5932E0D518B9D50700984A16 /* MMAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAdView.h; sourceTree = "<group>"; };
-		5932E0D618B9D50700984A16 /* MMInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMInterstitial.h; sourceTree = "<group>"; };
-		5932E0D718B9D50700984A16 /* MMRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMRequest.h; sourceTree = "<group>"; };
-		5932E0D818B9D50700984A16 /* MMSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSDK.h; sourceTree = "<group>"; };
 		5932E0DB18B9D68500984A16 /* MMediaInterstitialAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMediaInterstitialAdViewController.h; sourceTree = "<group>"; };
 		5932E0DC18B9D68500984A16 /* MMediaInterstitialAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMediaInterstitialAdViewController.m; sourceTree = "<group>"; };
 		5932E0DE18B9D7A700984A16 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -96,6 +91,11 @@
 		5932E0F418B9D83800984A16 /* SpeechKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpeechKit.framework; sourceTree = "<group>"; };
 		5932E0F718B9DAC000984A16 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
 		5932E0F818B9DAC000984A16 /* libFlurry_4.3.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.3.2.a; sourceTree = "<group>"; };
+		5932E0FB18BA63A000984A16 /* libMMSDK_5.1.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMMSDK_5.1.1.a; sourceTree = "<group>"; };
+		5932E0FC18BA63A000984A16 /* MMAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAdView.h; sourceTree = "<group>"; };
+		5932E0FD18BA63A000984A16 /* MMInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMInterstitial.h; sourceTree = "<group>"; };
+		5932E0FE18BA63A000984A16 /* MMRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMRequest.h; sourceTree = "<group>"; };
+		5932E0FF18BA63A000984A16 /* MMSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSDK.h; sourceTree = "<group>"; };
 		596D274D18AEF975005DC556 /* ScreamMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreamMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		596D275018AEF975005DC556 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		596D275218AEF975005DC556 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -162,8 +162,8 @@
 				5932E0CD18B4692C00984A16 /* Social.framework in Frameworks */,
 				596D278918AF0126005DC556 /* AVFoundation.framework in Frameworks */,
 				597505B418B2A39D0078E6D7 /* FacebookSDK.framework in Frameworks */,
-				5932E0D918B9D50700984A16 /* libMMSDK_5.1.1.a in Frameworks */,
 				596D275318AEF975005DC556 /* CoreGraphics.framework in Frameworks */,
+				5932E10018BA63A000984A16 /* libMMSDK_5.1.1.a in Frameworks */,
 				596D275518AEF975005DC556 /* UIKit.framework in Frameworks */,
 				596D275118AEF975005DC556 /* Foundation.framework in Frameworks */,
 				5932E0F918B9DAC000984A16 /* libFlurry_4.3.2.a in Frameworks */,
@@ -183,18 +183,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5932E0D318B9D50700984A16 /* MMSDK */ = {
-			isa = PBXGroup;
-			children = (
-				5932E0D418B9D50700984A16 /* libMMSDK_5.1.1.a */,
-				5932E0D518B9D50700984A16 /* MMAdView.h */,
-				5932E0D618B9D50700984A16 /* MMInterstitial.h */,
-				5932E0D718B9D50700984A16 /* MMRequest.h */,
-				5932E0D818B9D50700984A16 /* MMSDK.h */,
-			);
-			path = MMSDK;
-			sourceTree = "<group>";
-		};
 		5932E0DA18B9D66300984A16 /* MMediaAdViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +199,18 @@
 				5932E0F818B9DAC000984A16 /* libFlurry_4.3.2.a */,
 			);
 			path = Flurry;
+			sourceTree = "<group>";
+		};
+		5932E0FA18BA63A000984A16 /* MMSDK */ = {
+			isa = PBXGroup;
+			children = (
+				5932E0FB18BA63A000984A16 /* libMMSDK_5.1.1.a */,
+				5932E0FC18BA63A000984A16 /* MMAdView.h */,
+				5932E0FD18BA63A000984A16 /* MMInterstitial.h */,
+				5932E0FE18BA63A000984A16 /* MMRequest.h */,
+				5932E0FF18BA63A000984A16 /* MMSDK.h */,
+			);
+			path = MMSDK;
 			sourceTree = "<group>";
 		};
 		596D274418AEF975005DC556 = {
@@ -369,9 +369,9 @@
 		597505B218B2A3820078E6D7 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				5932E0FA18BA63A000984A16 /* MMSDK */,
 				5932E0F618B9DAC000984A16 /* Flurry */,
 				5932E0F418B9D83800984A16 /* SpeechKit.framework */,
-				5932E0D318B9D50700984A16 /* MMSDK */,
 				597505B318B2A39D0078E6D7 /* FacebookSDK.framework */,
 			);
 			name = libs;
@@ -642,6 +642,8 @@
 		596D278318AEF975005DC556 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -659,15 +661,17 @@
 					"/Users/amolchaudhari/Documents/FacebookSDK/**",
 				);
 				INFOPLIST_FILE = "ScreamMeter/ScreamMeter-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/amolchaudhari/Documents/XcodeProjects/ScreamMeter/ScreamMeter/MMSDK,
+					"/Users/amolchaudhari/Documents/XcodeProjects/ScreamMeter/ScreamMeter/MMSDK/**",
 					/Users/amolchaudhari/Documents/XcodeProjects/ScreamMeter/ScreamMeter/Flurry,
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -675,6 +679,8 @@
 		596D278418AEF975005DC556 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
@@ -692,15 +698,17 @@
 					"/Users/amolchaudhari/Documents/FacebookSDK/**",
 				);
 				INFOPLIST_FILE = "ScreamMeter/ScreamMeter-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/amolchaudhari/Documents/XcodeProjects/ScreamMeter/ScreamMeter/MMSDK,
+					"/Users/amolchaudhari/Documents/XcodeProjects/ScreamMeter/ScreamMeter/MMSDK/**",
 					/Users/amolchaudhari/Documents/XcodeProjects/ScreamMeter/ScreamMeter/Flurry,
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
