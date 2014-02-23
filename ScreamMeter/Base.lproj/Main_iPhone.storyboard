@@ -76,6 +76,9 @@
                                 <state key="normal" title="MORE GAMES">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="openMoreGames:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TYd-Hq-lvK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9k-PS-u4a">
                                 <rect key="frame" x="129" y="284" width="63" height="30"/>
@@ -83,6 +86,9 @@
                                 <state key="normal" title="RATE US">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="rateUs:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="AVU-Oz-6z5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
