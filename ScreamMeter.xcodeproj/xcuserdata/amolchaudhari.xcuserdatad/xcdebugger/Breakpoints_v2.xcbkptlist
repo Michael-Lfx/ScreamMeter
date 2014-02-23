@@ -20,11 +20,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScreamMeter/AppDelegate.m"
-            timestampString = "414825691.60632"
+            timestampString = "414830654.533742"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "-application:openURL:sourceApplication:annotation:"
             landmarkType = "5">
          </BreakpointContent>
@@ -131,12 +131,12 @@
                   symbolName = "__34-[ViewController shareOnfacebook:]_block_invoke"
                   moduleName = "ScreamMeter"
                   urlString = "file:///Users/amolchaudhari/Documents/XcodeProjects/ScreamMeter/ScreamMeter/ViewController.m"
-                  timestampString = "414827324.981784"
+                  timestampString = "414830655.288022"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "230"
                   endingLineNumber = "230"
-                  offsetFromSymbolStart = "36">
+                  offsetFromSymbolStart = "22">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -145,12 +145,12 @@
                   symbolName = "__34-[ViewController shareOnfacebook:]_block_invoke_2"
                   moduleName = "ScreamMeter"
                   urlString = "file:///Users/amolchaudhari/Documents/XcodeProjects/ScreamMeter/ScreamMeter/ViewController.m"
-                  timestampString = "414827324.982075"
+                  timestampString = "414830655.288284"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "231"
                   endingLineNumber = "231"
-                  offsetFromSymbolStart = "32">
+                  offsetFromSymbolStart = "22">
                </Location>
             </Locations>
          </BreakpointContent>

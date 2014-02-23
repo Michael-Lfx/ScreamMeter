@@ -10,6 +10,7 @@
 		5932E0CB18B45FA000984A16 /* FacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5932E0CA18B45FA000984A16 /* FacebookViewController.m */; };
 		5932E0CD18B4692C00984A16 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5932E0CC18B4692C00984A16 /* Social.framework */; };
 		5932E0D018B597E800984A16 /* PBJMediaWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5932E0CF18B597E800984A16 /* PBJMediaWriter.m */; };
+		5932E0D218B9CF2400984A16 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5932E0D118B9CF2400984A16 /* iAd.framework */; };
 		596D275118AEF975005DC556 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596D275018AEF975005DC556 /* Foundation.framework */; };
 		596D275318AEF975005DC556 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596D275218AEF975005DC556 /* CoreGraphics.framework */; };
 		596D275518AEF975005DC556 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596D275418AEF975005DC556 /* UIKit.framework */; };
@@ -58,6 +59,7 @@
 		5932E0CC18B4692C00984A16 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		5932E0CE18B597E800984A16 /* PBJMediaWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBJMediaWriter.h; sourceTree = "<group>"; };
 		5932E0CF18B597E800984A16 /* PBJMediaWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBJMediaWriter.m; sourceTree = "<group>"; };
+		5932E0D118B9CF2400984A16 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		596D274D18AEF975005DC556 /* ScreamMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreamMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		596D275018AEF975005DC556 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		596D275218AEF975005DC556 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -108,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5932E0D218B9CF2400984A16 /* iAd.framework in Frameworks */,
 				5932E0CD18B4692C00984A16 /* Social.framework in Frameworks */,
 				596D278918AF0126005DC556 /* AVFoundation.framework in Frameworks */,
 				597505B418B2A39D0078E6D7 /* FacebookSDK.framework in Frameworks */,
@@ -152,6 +155,7 @@
 		596D274F18AEF975005DC556 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5932E0D118B9CF2400984A16 /* iAd.framework */,
 				5932E0CC18B4692C00984A16 /* Social.framework */,
 				596D278818AF0126005DC556 /* AVFoundation.framework */,
 				596D275018AEF975005DC556 /* Foundation.framework */,

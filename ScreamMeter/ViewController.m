@@ -442,7 +442,7 @@
         _levelTimer = [NSTimer scheduledTimerWithTimeInterval: 0.1 target: self selector: @selector(levelTimerCallback:) userInfo: nil repeats: YES];
 
   	} else
-  		NSLog([error description]);
+  		NSLog(@"%@",[error description]);
 
 }
 

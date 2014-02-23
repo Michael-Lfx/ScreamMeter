@@ -10,6 +10,7 @@
 #import "FacebookController.h"
 #import <FacebookSDK/FacebookSDK.h>
 #import <AVFoundation/AVFoundation.h>
+#import "iAd/ADBannerView.h"
 
 @implementation AppDelegate
 
