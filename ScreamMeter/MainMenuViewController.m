@@ -33,6 +33,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     [[CameraController sharedManager] startCurrentVideoPreview];
+    [self.navigationController setNavigationBarHidden:YES];
 }
 
 - (void)didReceiveMemoryWarning

@@ -12,12 +12,42 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="AcS-GS-7t3"/>
+                        <segue destination="P4w-7k-6W6" kind="relationship" relationship="rootViewController" id="raK-J3-ejW"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8VA-G6-9Mb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-336" y="-83"/>
+            <point key="canvasLocation" x="-302" y="-89"/>
+        </scene>
+        <!--Media Interstitial Ad View Controller-->
+        <scene sceneID="U1p-zm-bky">
+            <objects>
+                <viewController id="P4w-7k-6W6" customClass="MMediaInterstitialAdViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kUe-iO-ReO"/>
+                        <viewControllerLayoutGuide type="bottom" id="sj0-3k-i7h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D0k-ct-4PL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loading....Please Wait.." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ur-2V-6TD">
+                                <rect key="frame" x="70" y="273" width="181" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eIL-4y-ORe"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="push" identifier="MainMenuViewController" id="gXj-AB-4EZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IrM-8R-leb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113" y="-89"/>
         </scene>
         <!--Main Menu View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -60,6 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="561" y="-89"/>
         </scene>
         <!--View Controller - Title-->
         <scene sceneID="R2v-gZ-g7M">
@@ -240,7 +271,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kjl-IJ-BWY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="702" y="-83"/>
+            <point key="canvasLocation" x="1036" y="-89"/>
         </scene>
         <!--Facebook View Controller-->
         <scene sceneID="D4J-bx-KqH">
@@ -279,7 +310,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bv8-AK-Zxr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1108" y="-83"/>
+            <point key="canvasLocation" x="1464" y="-71"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

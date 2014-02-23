@@ -11,6 +11,8 @@
 #import <FacebookSDK/FacebookSDK.h>
 #import <AVFoundation/AVFoundation.h>
 #import "iAd/ADBannerView.h"
+#import "MMInterstitial.h"
+#import "Flurry.h"
 
 @implementation AppDelegate
 
@@ -21,7 +23,10 @@
     
     [FBLoginView class];
     [FBProfilePictureView class];
-
+    [self fetchMMediaInterstatialAd];
+    
+    [Flurry setCrashReportingEnabled:YES];
+    [Flurry startSession:@"9965BMSGVJB9MS5FWF86"];
     
     // Whenever a person opens the app, check for a cached session
     if (FBSession.activeSession.state == FBSessionStateCreatedTokenLoaded) {
@@ -52,6 +57,38 @@
     
     return YES;
 }
+
+
+-(void)fetchMMediaInterstatialAd{
+    //Location Object
+    [MMSDK initialize]; //Initialize a Millennial Media session
+    
+    //Create a location manager for passing location data for conversion tracking and ad requests
+    self.locationManager = [[CLLocationManager alloc] init];
+    [self.locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
+    [self.locationManager startUpdatingLocation];
+
+    
+    //MMRequest Object
+    MMRequest *request = [MMRequest requestWithLocation:self.locationManager.location];
+    
+    
+    [MMInterstitial fetchWithRequest:request
+                                apid:@"152729"
+                        onCompletion:^(BOOL success, NSError *error) {
+                            if (success) {
+                                NSLog(@"Ad available");
+                            }
+                            else {
+                                NSLog(@"Error fetching ad: %@", error);
+                            }
+                        }];
+
+}
+
+
+
+
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
