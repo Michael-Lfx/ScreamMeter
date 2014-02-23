@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5932E0CB18B45FA000984A16 /* FacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5932E0CA18B45FA000984A16 /* FacebookViewController.m */; };
+		5932E0CD18B4692C00984A16 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5932E0CC18B4692C00984A16 /* Social.framework */; };
+		5932E0D018B597E800984A16 /* PBJMediaWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5932E0CF18B597E800984A16 /* PBJMediaWriter.m */; };
 		596D275118AEF975005DC556 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596D275018AEF975005DC556 /* Foundation.framework */; };
 		596D275318AEF975005DC556 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596D275218AEF975005DC556 /* CoreGraphics.framework */; };
 		596D275518AEF975005DC556 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596D275418AEF975005DC556 /* UIKit.framework */; };
@@ -22,6 +25,21 @@
 		596D277518AEF975005DC556 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596D275418AEF975005DC556 /* UIKit.framework */; };
 		596D277D18AEF975005DC556 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 596D277B18AEF975005DC556 /* InfoPlist.strings */; };
 		596D277F18AEF975005DC556 /* ScreamMeterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 596D277E18AEF975005DC556 /* ScreamMeterTests.m */; };
+		596D278918AF0126005DC556 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596D278818AF0126005DC556 /* AVFoundation.framework */; };
+		596D278C18AFD457005DC556 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 596D278B18AFD457005DC556 /* MainMenuViewController.m */; };
+		596D279018B02E6A005DC556 /* ScoreDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 596D278F18B02E6A005DC556 /* ScoreDataModel.m */; };
+		5975059418B1C6790078E6D7 /* green.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5975059118B1C6790078E6D7 /* green.jpeg */; };
+		5975059518B1C6790078E6D7 /* red.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5975059218B1C6790078E6D7 /* red.jpeg */; };
+		5975059618B1C6790078E6D7 /* yellow.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5975059318B1C6790078E6D7 /* yellow.jpeg */; };
+		5975059A18B1D3B80078E6D7 /* CameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5975059918B1D3B80078E6D7 /* CameraController.m */; };
+		597505A618B1D5750078E6D7 /* PBJVision.m in Sources */ = {isa = PBXBuildFile; fileRef = 5975059F18B1D5750078E6D7 /* PBJVision.m */; };
+		597505A718B1D5750078E6D7 /* PBJVisionUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 597505A118B1D5750078E6D7 /* PBJVisionUtilities.m */; };
+		597505A818B1D5750078E6D7 /* Shader.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 597505A318B1D5750078E6D7 /* Shader.fsh */; };
+		597505A918B1D5750078E6D7 /* Shader.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 597505A418B1D5750078E6D7 /* Shader.vsh */; };
+		597505B018B1D8E00078E6D7 /* PBJVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 597505AD18B1D8E00078E6D7 /* PBJVideoPlayerController.m */; };
+		597505B118B1D8E00078E6D7 /* PBJVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 597505AF18B1D8E00078E6D7 /* PBJVideoView.m */; };
+		597505B418B2A39D0078E6D7 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 597505B318B2A39D0078E6D7 /* FacebookSDK.framework */; };
+		597505B818B2A3EB0078E6D7 /* FacebookController.m in Sources */ = {isa = PBXBuildFile; fileRef = 597505B718B2A3EB0078E6D7 /* FacebookController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +53,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5932E0C918B45FA000984A16 /* FacebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookViewController.h; sourceTree = "<group>"; };
+		5932E0CA18B45FA000984A16 /* FacebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookViewController.m; sourceTree = "<group>"; };
+		5932E0CC18B4692C00984A16 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		5932E0CE18B597E800984A16 /* PBJMediaWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBJMediaWriter.h; sourceTree = "<group>"; };
+		5932E0CF18B597E800984A16 /* PBJMediaWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBJMediaWriter.m; sourceTree = "<group>"; };
 		596D274D18AEF975005DC556 /* ScreamMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreamMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		596D275018AEF975005DC556 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		596D275218AEF975005DC556 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +78,29 @@
 		596D277A18AEF975005DC556 /* ScreamMeterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScreamMeterTests-Info.plist"; sourceTree = "<group>"; };
 		596D277C18AEF975005DC556 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		596D277E18AEF975005DC556 /* ScreamMeterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreamMeterTests.m; sourceTree = "<group>"; };
+		596D278818AF0126005DC556 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		596D278A18AFD457005DC556 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		596D278B18AFD457005DC556 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		596D278E18B02E6A005DC556 /* ScoreDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreDataModel.h; sourceTree = "<group>"; };
+		596D278F18B02E6A005DC556 /* ScoreDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreDataModel.m; sourceTree = "<group>"; };
+		5975059118B1C6790078E6D7 /* green.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = green.jpeg; sourceTree = "<group>"; };
+		5975059218B1C6790078E6D7 /* red.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = red.jpeg; sourceTree = "<group>"; };
+		5975059318B1C6790078E6D7 /* yellow.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yellow.jpeg; sourceTree = "<group>"; };
+		5975059818B1D3B80078E6D7 /* CameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraController.h; sourceTree = "<group>"; };
+		5975059918B1D3B80078E6D7 /* CameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraController.m; sourceTree = "<group>"; };
+		5975059E18B1D5750078E6D7 /* PBJVision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBJVision.h; sourceTree = "<group>"; };
+		5975059F18B1D5750078E6D7 /* PBJVision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBJVision.m; sourceTree = "<group>"; };
+		597505A018B1D5750078E6D7 /* PBJVisionUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBJVisionUtilities.h; sourceTree = "<group>"; };
+		597505A118B1D5750078E6D7 /* PBJVisionUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBJVisionUtilities.m; sourceTree = "<group>"; };
+		597505A318B1D5750078E6D7 /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
+		597505A418B1D5750078E6D7 /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
+		597505AC18B1D8E00078E6D7 /* PBJVideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBJVideoPlayerController.h; sourceTree = "<group>"; };
+		597505AD18B1D8E00078E6D7 /* PBJVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBJVideoPlayerController.m; sourceTree = "<group>"; };
+		597505AE18B1D8E00078E6D7 /* PBJVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBJVideoView.h; sourceTree = "<group>"; };
+		597505AF18B1D8E00078E6D7 /* PBJVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBJVideoView.m; sourceTree = "<group>"; };
+		597505B318B2A39D0078E6D7 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		597505B618B2A3EB0078E6D7 /* FacebookController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookController.h; sourceTree = "<group>"; };
+		597505B718B2A3EB0078E6D7 /* FacebookController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +108,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5932E0CD18B4692C00984A16 /* Social.framework in Frameworks */,
+				596D278918AF0126005DC556 /* AVFoundation.framework in Frameworks */,
+				597505B418B2A39D0078E6D7 /* FacebookSDK.framework in Frameworks */,
 				596D275318AEF975005DC556 /* CoreGraphics.framework in Frameworks */,
 				596D275518AEF975005DC556 /* UIKit.framework in Frameworks */,
 				596D275118AEF975005DC556 /* Foundation.framework in Frameworks */,
@@ -103,6 +152,8 @@
 		596D274F18AEF975005DC556 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5932E0CC18B4692C00984A16 /* Social.framework */,
+				596D278818AF0126005DC556 /* AVFoundation.framework */,
 				596D275018AEF975005DC556 /* Foundation.framework */,
 				596D275218AEF975005DC556 /* CoreGraphics.framework */,
 				596D275418AEF975005DC556 /* UIKit.framework */,
@@ -114,10 +165,18 @@
 		596D275618AEF975005DC556 /* ScreamMeter */ = {
 			isa = PBXGroup;
 			children = (
+				597505B518B2A3AA0078E6D7 /* Facebook */,
+				5975059718B1D3A30078E6D7 /* Camera */,
+				5975059118B1C6790078E6D7 /* green.jpeg */,
+				5975059218B1C6790078E6D7 /* red.jpeg */,
+				5975059318B1C6790078E6D7 /* yellow.jpeg */,
+				596D278D18B02E5C005DC556 /* Model */,
 				596D275F18AEF975005DC556 /* AppDelegate.h */,
 				596D276018AEF975005DC556 /* AppDelegate.m */,
 				596D276218AEF975005DC556 /* Main_iPhone.storyboard */,
 				596D276518AEF975005DC556 /* Main_iPad.storyboard */,
+				596D278A18AFD457005DC556 /* MainMenuViewController.h */,
+				596D278B18AFD457005DC556 /* MainMenuViewController.m */,
 				596D276818AEF975005DC556 /* ViewController.h */,
 				596D276918AEF975005DC556 /* ViewController.m */,
 				596D276B18AEF975005DC556 /* Images.xcassets */,
@@ -129,6 +188,7 @@
 		596D275718AEF975005DC556 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				597505B218B2A3820078E6D7 /* libs */,
 				596D275818AEF975005DC556 /* ScreamMeter-Info.plist */,
 				596D275918AEF975005DC556 /* InfoPlist.strings */,
 				596D275C18AEF975005DC556 /* main.m */,
@@ -153,6 +213,80 @@
 				596D277B18AEF975005DC556 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		596D278D18B02E5C005DC556 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				596D278E18B02E6A005DC556 /* ScoreDataModel.h */,
+				596D278F18B02E6A005DC556 /* ScoreDataModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5975059718B1D3A30078E6D7 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				597505AB18B1D8E00078E6D7 /* VideoPlayerSource */,
+				5975059B18B1D5750078E6D7 /* CameraSource */,
+				5975059818B1D3B80078E6D7 /* CameraController.h */,
+				5975059918B1D3B80078E6D7 /* CameraController.m */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
+		5975059B18B1D5750078E6D7 /* CameraSource */ = {
+			isa = PBXGroup;
+			children = (
+				5932E0CE18B597E800984A16 /* PBJMediaWriter.h */,
+				5932E0CF18B597E800984A16 /* PBJMediaWriter.m */,
+				5975059E18B1D5750078E6D7 /* PBJVision.h */,
+				5975059F18B1D5750078E6D7 /* PBJVision.m */,
+				597505A018B1D5750078E6D7 /* PBJVisionUtilities.h */,
+				597505A118B1D5750078E6D7 /* PBJVisionUtilities.m */,
+				597505A218B1D5750078E6D7 /* Shaders */,
+			);
+			name = CameraSource;
+			path = Source;
+			sourceTree = "<group>";
+		};
+		597505A218B1D5750078E6D7 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				597505A318B1D5750078E6D7 /* Shader.fsh */,
+				597505A418B1D5750078E6D7 /* Shader.vsh */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		597505AB18B1D8E00078E6D7 /* VideoPlayerSource */ = {
+			isa = PBXGroup;
+			children = (
+				597505AC18B1D8E00078E6D7 /* PBJVideoPlayerController.h */,
+				597505AD18B1D8E00078E6D7 /* PBJVideoPlayerController.m */,
+				597505AE18B1D8E00078E6D7 /* PBJVideoView.h */,
+				597505AF18B1D8E00078E6D7 /* PBJVideoView.m */,
+			);
+			path = VideoPlayerSource;
+			sourceTree = "<group>";
+		};
+		597505B218B2A3820078E6D7 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				597505B318B2A39D0078E6D7 /* FacebookSDK.framework */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		597505B518B2A3AA0078E6D7 /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				597505B618B2A3EB0078E6D7 /* FacebookController.h */,
+				597505B718B2A3EB0078E6D7 /* FacebookController.m */,
+				5932E0C918B45FA000984A16 /* FacebookViewController.h */,
+				5932E0CA18B45FA000984A16 /* FacebookViewController.m */,
+			);
+			name = Facebook;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +336,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Amol Chaudhari";
 				TargetAttributes = {
+					596D274C18AEF975005DC556 = {
+						DevelopmentTeam = PNEW3T9XKD;
+					};
 					596D277018AEF975005DC556 = {
 						TestTargetID = 596D274C18AEF975005DC556;
 					};
@@ -231,10 +368,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5975059418B1C6790078E6D7 /* green.jpeg in Resources */,
 				596D276718AEF975005DC556 /* Main_iPad.storyboard in Resources */,
 				596D276C18AEF975005DC556 /* Images.xcassets in Resources */,
+				5975059618B1C6790078E6D7 /* yellow.jpeg in Resources */,
 				596D276418AEF975005DC556 /* Main_iPhone.storyboard in Resources */,
 				596D275B18AEF975005DC556 /* InfoPlist.strings in Resources */,
+				5975059518B1C6790078E6D7 /* red.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,8 +393,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				597505B118B1D8E00078E6D7 /* PBJVideoView.m in Sources */,
+				597505A718B1D5750078E6D7 /* PBJVisionUtilities.m in Sources */,
+				596D278C18AFD457005DC556 /* MainMenuViewController.m in Sources */,
+				5932E0D018B597E800984A16 /* PBJMediaWriter.m in Sources */,
+				5932E0CB18B45FA000984A16 /* FacebookViewController.m in Sources */,
+				597505A618B1D5750078E6D7 /* PBJVision.m in Sources */,
+				597505A818B1D5750078E6D7 /* Shader.fsh in Sources */,
 				596D276A18AEF975005DC556 /* ViewController.m in Sources */,
 				596D276118AEF975005DC556 /* AppDelegate.m in Sources */,
+				597505A918B1D5750078E6D7 /* Shader.vsh in Sources */,
+				596D279018B02E6A005DC556 /* ScoreDataModel.m in Sources */,
+				597505B018B1D8E00078E6D7 /* PBJVideoPlayerController.m in Sources */,
+				597505B818B2A3EB0078E6D7 /* FacebookController.m in Sources */,
+				5975059A18B1D3B80078E6D7 /* CameraController.m in Sources */,
 				596D275D18AEF975005DC556 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,10 +544,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/amolchaudhari/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ScreamMeter/ScreamMeter-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/amolchaudhari/Documents/FacebookSDK/**",
+				);
 				INFOPLIST_FILE = "ScreamMeter/ScreamMeter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -405,10 +571,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/amolchaudhari/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ScreamMeter/ScreamMeter-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/amolchaudhari/Documents/FacebookSDK/**",
+				);
 				INFOPLIST_FILE = "ScreamMeter/ScreamMeter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -474,6 +654,7 @@
 				596D278418AEF975005DC556 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		596D278518AEF975005DC556 /* Build configuration list for PBXNativeTarget "ScreamMeterTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +663,7 @@
 				596D278718AEF975005DC556 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
