@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FacebookSDK/FacebookSDK.h>
 
 @interface FacebookViewController : UIViewController
+@property (nonatomic, copy) void (^executeAfterLogin)();
 
 @end

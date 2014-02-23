@@ -17,6 +17,11 @@
 {
     // Override point for customization after application launch.
     
+    
+    [FBLoginView class];
+    [FBProfilePictureView class];
+
+    
     // Whenever a person opens the app, check for a cached session
     if (FBSession.activeSession.state == FBSessionStateCreatedTokenLoaded) {
         NSLog(@"Found a cached session");
@@ -55,11 +60,14 @@
 }
 
 -(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    BOOL wasHandled = [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
+
     return [FBSession.activeSession handleOpenURL:url];
 
     //return [[FacebookController sharedInstance] application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
 }
-							
+
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -12,7 +12,7 @@
 #import "CameraController.h"
 #import "FacebookController.h"
 
-
+#import "FacebookViewController.h"
 
 
 @interface ViewController (){
@@ -224,19 +224,24 @@
 }
 
 -(IBAction)shareOnfacebook:(id)sender{
-    /*
+    
     BOOL hasUserLoggedIn = [[FacebookController sharedInstance]isUserLoggedInFacebook];
-    if (hasUserLoggedIn) {
-        [[FacebookController sharedInstance]getPublishRights:^{
+    void (^publishVideoBlock)() = ^void() {
+        [[FacebookController sharedInstance]loginUserWithBlock:^{
             NSString *videoPath = [[CameraController sharedManager]currentVideoPath];
             [[FacebookController sharedInstance]publishVideoWithUrl:videoPath];
         }];
+    };
 
+    
+    if (hasUserLoggedIn) {
+        publishVideoBlock();
     }else{
-        [self performSegueWithIdentifier:@"FacebookViewController" sender:self];
+        [self performSegueWithIdentifier:@"FacebookViewController" sender:publishVideoBlock];
+        
     }
     
-    */
+    /*
     
     
     [[FacebookController sharedInstance]loginUserWithBlock:^{
@@ -245,9 +250,19 @@
 
     }];
     
-    
+    */
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    if ([segue.identifier isEqualToString:@"FacebookViewController"]) {
+        FacebookViewController *fbViewController = segue.destinationViewController;
+        fbViewController.executeAfterLogin = sender;
+    }
+
+    
+    
+}
 
 -(IBAction)restartGame:(id)sender{
     [self startSessions];

@@ -167,9 +167,6 @@
 			children = (
 				597505B518B2A3AA0078E6D7 /* Facebook */,
 				5975059718B1D3A30078E6D7 /* Camera */,
-				5975059118B1C6790078E6D7 /* green.jpeg */,
-				5975059218B1C6790078E6D7 /* red.jpeg */,
-				5975059318B1C6790078E6D7 /* yellow.jpeg */,
 				596D278D18B02E5C005DC556 /* Model */,
 				596D275F18AEF975005DC556 /* AppDelegate.h */,
 				596D276018AEF975005DC556 /* AppDelegate.m */,
@@ -188,6 +185,9 @@
 		596D275718AEF975005DC556 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5975059118B1C6790078E6D7 /* green.jpeg */,
+				5975059218B1C6790078E6D7 /* red.jpeg */,
+				5975059318B1C6790078E6D7 /* yellow.jpeg */,
 				597505B218B2A3820078E6D7 /* libs */,
 				596D275818AEF975005DC556 /* ScreamMeter-Info.plist */,
 				596D275918AEF975005DC556 /* InfoPlist.strings */,
