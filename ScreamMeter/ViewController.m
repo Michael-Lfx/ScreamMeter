@@ -295,7 +295,7 @@
 
     __weak UIView *weakView = self.view;
     [_cameraController setParentViewController:self];
-    [_cameraController addPreviewLayerOnView:weakView];
+   // [_cameraController addPreviewLayerOnView:weakView];
     [self addTestButton];
     [self startSessions];
 }
