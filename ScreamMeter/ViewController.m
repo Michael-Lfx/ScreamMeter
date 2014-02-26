@@ -439,7 +439,7 @@
   		[_recorder prepareToRecord];
   		_recorder.meteringEnabled = YES;
   		[_recorder record];
-        _levelTimer = [NSTimer scheduledTimerWithTimeInterval: 0.1 target: self selector: @selector(levelTimerCallback:) userInfo: nil repeats: YES];
+        _levelTimer = [NSTimer scheduledTimerWithTimeInterval: 0.05 target: self selector: @selector(levelTimerCallback:) userInfo: nil repeats: YES];
 
   	} else
   		NSLog(@"%@",[error description]);
