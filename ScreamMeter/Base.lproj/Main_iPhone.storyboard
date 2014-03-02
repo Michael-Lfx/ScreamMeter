@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="nWN-yQ-5xo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="nWN-yQ-5xo">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
@@ -117,7 +117,7 @@
                                 <color key="backgroundColor" red="0.41568627450980389" green="0.078431372549019607" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Fg-cz-fcd" userLabel="score">
-                                <rect key="frame" x="94" y="273" width="138" height="21"/>
+                                <rect key="frame" x="94" y="273" width="138" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="31"/>
                                 <color key="textColor" red="0.3803921569" green="0.84313725490000002" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -136,13 +136,6 @@
                                     <action selector="restartGame:" destination="3Xf-Af-rrc" eventType="touchUpInside" id="Li7-46-XKz"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IdG-zn-f6E">
-                                <rect key="frame" x="22" y="145" width="274" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="31"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KU3-PX-ewu" userLabel="level 1">
                                 <rect key="frame" x="103" y="255" width="120" height="10"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -189,33 +182,26 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36470588240000001" green="0.070588235289999995" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8G-g5-29Q">
-                                <rect key="frame" x="255" y="321" width="45" height="23"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QI0-RP-OqI">
+                                <rect key="frame" x="77" y="102" width="173" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Main Menu">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="gotoMainMenu:" destination="3Xf-Af-rrc" eventType="touchUpInside" id="fK4-Kz-wTP"/>
-                                </connections>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydP-rN-qtP">
-                                <rect key="frame" x="87" y="109" width="149" height="48"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="highscore">
+                                        <attributes>
+                                            <color key="NSColor" red="0.55074876370000003" green="0.064469247780000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="31" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="0.5507487636830406" green="0.064469247784737949" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8DY-8A-0gE">
+                                <rect key="frame" x="109" y="477" width="101" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="31"/>
-                                <state key="normal" title="highscore">
-                                    <color key="titleColor" red="0.59999999999999998" green="0.42745098039215684" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="watchVideo:" destination="3Xf-Af-rrc" eventType="touchUpInside" id="s5E-Q6-lfc"/>
-                                </connections>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8DY-8A-0gE">
-                                <rect key="frame" x="166" y="518" width="90" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Replay Video">
+                                <state key="normal" title="Share Video">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -223,7 +209,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VtF-XF-QxS" customClass="ADBannerView">
-                                <rect key="frame" x="0.0" y="20" width="320" height="50"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
@@ -241,21 +227,45 @@
                                 <color key="textColor" red="0.59999999999999998" green="0.42745098039215684" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IdG-zn-f6E">
+                                <rect key="frame" x="22" y="145" width="274" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6v-I2-ohM">
+                                <rect key="frame" x="188" y="515" width="102" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                <state key="normal" title="Watch Video">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="watchVideo:" destination="3Xf-Af-rrc" eventType="touchUpInside" id="ce9-cw-SHL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="ARM-xo-QMD"/>
                     <connections>
+                        <outlet property="bestLabel" destination="QI0-RP-OqI" id="pRZ-6L-wAE"/>
                         <outlet property="currentScoreLabel" destination="8Fg-cz-fcd" id="3o8-5M-uRn"/>
                         <outlet property="facebookShareButton" destination="8DY-8A-0gE" id="qyv-C2-qxX"/>
                         <outlet property="highScoreLabel" destination="IdG-zn-f6E" id="ajv-Qa-N8h"/>
-                        <outlet property="mainMenuButton" destination="g8G-g5-29Q" id="n1n-Nq-PKU"/>
                         <outlet property="restartButton" destination="PTH-dX-dWu" id="OD7-uR-I0b"/>
-                        <outlet property="watchVideoButton" destination="ydP-rN-qtP" id="uC8-e4-L4A"/>
-                        <outletCollection property="redLightsImageViewArray" destination="8P9-SF-v6h" id="nga-cp-1x1"/>
-                        <outletCollection property="redLightsImageViewArray" destination="RTF-iV-2R9" id="U47-gc-IfZ"/>
-                        <outletCollection property="yellowLightsImageViewArray" destination="ZJL-oH-5ys" id="q4b-E3-yxv"/>
+                        <outlet property="watchVideoButton" destination="I6v-I2-ohM" id="cgE-fH-1Fc"/>
                         <outletCollection property="greenLightsImageViewArray" destination="KU3-PX-ewu" id="ZCP-fx-FOd"/>
+                        <outletCollection property="greenLightsImageViewArray" destination="ZJL-oH-5ys" id="I3j-FM-lQe"/>
+                        <outletCollection property="greenLightsImageViewArray" destination="RTF-iV-2R9" id="oSY-Lg-y6t"/>
+                        <outletCollection property="greenLightsImageViewArray" destination="8P9-SF-v6h" id="Nbi-bi-zMJ"/>
+                        <outletCollection property="yellowLightsImageViewArray" destination="fnz-Rq-XCU" id="VKM-iw-g3V"/>
+                        <outletCollection property="yellowLightsImageViewArray" destination="fj0-ei-PGg" id="xKV-CW-RBa"/>
+                        <outletCollection property="yellowLightsImageViewArray" destination="Gya-If-rz9" id="e06-qT-qbd"/>
+                        <outletCollection property="redLightsImageViewArray" destination="6gw-NW-2Yp" id="XRU-2z-mOH"/>
+                        <outletCollection property="redLightsImageViewArray" destination="t8Z-5u-Kz4" id="yVj-uD-NrW"/>
                         <segue destination="CM5-Bq-zDi" kind="modal" identifier="FacebookViewController" id="qna-H9-WFi"/>
                     </connections>
                 </viewController>

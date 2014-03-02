@@ -100,6 +100,19 @@
     
 }
 
+-(void)levelTimerCallbackWithSampler:(double)peakPower{
+    const double ALPHA = 0.05;
+	double peakPowerForChannel = pow(10, (0.05 * peakPower));
+    
+	lowPassResults = ALPHA * peakPowerForChannel + (1.0 - ALPHA) * lowPassResults;
+    
+    
+    [self displayAudioMeterCheckForAudioSize:peakPowerForChannel];
+    
+    [self updateGamePlayState:peakPowerForChannel];
+
+}
+
 -(void)updateGamePlayState:(double)peakPowerForChannel{
 
     if (peakPowerForChannel==1.0f) {
@@ -486,11 +499,13 @@
 
 
 -(void)audioPeakPower:(Float32)peakPower andAudioAveragePower:(Float32)averagePower{
-    //[self levelTimerCallback:nil];
+    /*
+    [self levelTimerCallbackWithSampler:peakPower];
     double peakPowerForChannel = pow(10, (0.05 * peakPower));
     const double ALPHA = 0.05;
 	lowPassResults = ALPHA * peakPowerForChannel + (1.0 - ALPHA) * lowPassResults;
     _peakPowerForChannel=peakPowerForChannel;
+    */
 }
 
 
