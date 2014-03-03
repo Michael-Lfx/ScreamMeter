@@ -14,7 +14,7 @@
 + (id)sharedInstance;
 
 - (void)loginUser;
--(void)publishVideoWithUrl:(NSString*)urlString;
+-(void)publishVideoWithUrl:(NSDictionary*)dataDictionary;
 - (void)loginUserWithBlock:(void (^)())blockName;
 -(BOOL)isUserLoggedInFacebook;
 

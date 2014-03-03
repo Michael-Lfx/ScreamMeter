@@ -28,6 +28,7 @@
     
     ScoreDataModel *_scoreDataModel;
     CameraController *_cameraController;
+    NSMutableArray *_samples;
 }
 @property(nonatomic,weak)IBOutlet UILabel *currentScoreLabel;
 @property(nonatomic,weak)IBOutlet UILabel *highScoreLabel;
@@ -58,45 +59,15 @@
     
 	const double ALPHA = 0.05;
 	double peakPowerForChannel = pow(10, (0.05 * [_recorder peakPowerForChannel:0]));
-
+    
 	lowPassResults = ALPHA * peakPowerForChannel + (1.0 - ALPHA) * lowPassResults;
     
     
-    [self displayAudioMeterCheckForAudioSize:peakPowerForChannel];
     
-    NSDictionary *userInfo = [NSDictionary dictionaryWithObject:
-                              [NSNumber numberWithFloat:peakPowerForChannel]
-                                                         forKey:@"peakPowerForChannel"];
+    peakPowerForChannel = [self calculateMovingAverageWithValue:peakPowerForChannel];
+    
+    [self displayAudioMeterCheckForAudioSize:peakPowerForChannel];
     [self updateGamePlayState:peakPowerForChannel];
-   // [[NSNotificationCenter defaultCenter]
-    // postNotificationName:@"ChangeFlashLevel"
-     //object:self userInfo:userInfo];
-
-//	NSLog(@"PeakPower for channel: %f, Average input: %f Peak input: %f Low pass results: %f",peakPowerForChannel, [_recorder averagePowerForChannel:0], [_recorder peakPowerForChannel:0], lowPassResults);
-  //	NSLog(@"PeakPower for channel: %f",lowPassResults);
-  
-  //  _flashLight = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
-  /*
-    if([_flashLight isTorchAvailable] && [_flashLight isTorchModeSupported:AVCaptureTorchModeOn]){
-        [_flashLight lockForConfiguration:nil];
-        if (peakPowerForChannel==1.0f) {
-            [_flashLight setTorchModeOnWithLevel:AVCaptureMaxAvailableTorchLevel error:NULL];
-        }else if(peakPowerForChannel<0.3){
-            [_flashLight setTorchMode:AVCaptureTorchModeOff];
-            if (ScreamingGameplayState == ScreamingStartedState) {
-                ScreamingGameplayState=ScreamingStoppedState;
-            }
-            
-        }else{
-            float lightValue = peakPowerForChannel - 0.2;
-            [_flashLight setTorchModeOnWithLevel:lightValue error:NULL];
-            if (ScreamingGameplayState == ScreamingNotStartedState) {
-                ScreamingGameplayState = ScreamingStartedState;
-            }
-        }
-        [_flashLight unlockForConfiguration];
-    }
-    */
     
 }
 
@@ -113,6 +84,31 @@
 
 }
 
+-(double)calculateMovingAverageWithValue:(double)peakPower {
+    int N = 10;
+
+    if ([_samples count]==0) {
+        for (int i=0; i<N; i++) {
+            [_samples addObject:[NSNumber numberWithInt:0]];
+        }
+    }
+    [_samples insertObject:[NSNumber numberWithFloat:peakPower] atIndex:0];
+   
+    for (int i=10; i<[_samples count]; i++) {
+        [_samples removeObjectAtIndex:i];
+    }
+    
+    double sum=0;
+    for (int i=0; i<N; i++) {
+        sum = sum + [[_samples objectAtIndex:i] doubleValue];
+    }
+    
+    sum=sum/N;
+    NSLog(@"%f",sum);
+
+    return sum;
+}
+
 -(void)updateGamePlayState:(double)peakPowerForChannel{
 
     if (peakPowerForChannel==1.0f) {
@@ -123,7 +119,6 @@
             }
             
         }else{
-            float lightValue = peakPowerForChannel - 0.2;
             if (ScreamingGameplayState == ScreamingNotStartedState) {
                 ScreamingGameplayState = ScreamingStartedState;
             }
@@ -164,7 +159,7 @@
 -(void)displayAudioMeterCheckForAudioSize:(float)audioSignal{
     
     for (UIImageView *redImageView in _redLightsImageViewArray) {
-        if (audioSignal > 0.6) {
+        if (audioSignal > 0.8) {
             UIImage *redImage = [UIImage imageNamed:@"red.jpeg"];
             [redImageView setImage:redImage];
         }else if (audioSignal < 0.6){
@@ -173,7 +168,7 @@
     }
     
     for (UIImageView *yellowImageView in _yellowLightsImageViewArray) {
-        if (audioSignal > 0.3) {
+        if (audioSignal > 0.6) {
             UIImage *yellowImage = [UIImage imageNamed:@"yellow.jpeg"];
             [yellowImageView setImage:yellowImage];
         }else{
@@ -238,11 +233,17 @@
 
 -(IBAction)shareOnfacebook:(id)sender{
     
+    
+    NSString *currentScoreString = _scoreDataModel.currentScoreString;
+    [[FacebookController sharedInstance] setParentViewController:self];
     BOOL hasUserLoggedIn = [[FacebookController sharedInstance]isUserLoggedInFacebook];
     void (^publishVideoBlock)() = ^void() {
         [[FacebookController sharedInstance]loginUserWithBlock:^{
             NSString *videoPath = [[CameraController sharedManager]currentVideoPath];
-            [[FacebookController sharedInstance]publishVideoWithUrl:videoPath];
+            NSDictionary *dataDictionary = [NSDictionary dictionaryWithObjectsAndKeys:currentScoreString,@"currentScore",
+                videoPath,@"videoUrl",nil];
+
+            [[FacebookController sharedInstance]publishVideoWithUrl:dataDictionary];
         }];
     };
 
@@ -395,6 +396,8 @@
     
     [_cameraController startCurrentVideoPreview];
     [_cameraController startCurrentVideoCapture];
+    
+    _samples=[[NSMutableArray alloc]initWithCapacity:3];
 
 }
 

@@ -179,13 +179,6 @@
         [alert show];
     }];
     */
-    
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"It worked!" message: @"It worked"
-                                                   delegate:self
-                                          cancelButtonTitle:nil
-                                          otherButtonTitles:@"OK", nil];
-    [alert show];
-
 }
 
 -(void)playButton:(id)sender{
@@ -211,10 +204,13 @@
 }
 
 - (void)videoPlayerReady:(PBJVideoPlayerController *)videoPlayer{
-    
+    /*
     UIButton *playButton = [[UIButton alloc]initWithFrame:CGRectMake(20, 20, 100, 100)];
     [videoPlayer.view addSubview:playButton];
     [playButton addTarget:self action:@selector(playVideo:) forControlEvents:UIControlEventTouchDown];
+    */
+    _videoPlayerController.navigationController.navigationBar.barTintColor = [UIColor blackColor];
+    [_videoPlayerController.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
     
 }
 - (void)videoPlayerPlaybackStateDidChange:(PBJVideoPlayerController *)videoPlayer{

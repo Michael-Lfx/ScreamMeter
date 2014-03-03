@@ -24,6 +24,7 @@ static FBLoginView* loginView;
     ACAccountStore *_accountStore;
     FBSession *_activeSession;
 }
+@property (nonatomic, retain) UIActivityIndicatorView *activitySpinner;
 
 
 @end
@@ -189,18 +190,31 @@ static FBLoginView* loginView;
     return NO;
 }
 
--(void)publishVideoWithUrl:(NSString*)urlString{
+-(void)publishVideoWithUrl:(NSDictionary*)dataDictionary {
 
-   // FBSession *activeSession = [[FBSession activeSession] initWithPermissions:permissions];
-    _currentVideoUrl=[urlString copy];
     
+    UIActivityIndicatorView *tempSpinner = [[UIActivityIndicatorView alloc]  initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    _activitySpinner = tempSpinner;
+    _activitySpinner.center = [_parentViewController.view convertPoint:_parentViewController.view.center fromView:_parentViewController.view.superview];
+    [_parentViewController.view addSubview:_activitySpinner];
+    [_activitySpinner startAnimating];
+    
+   // FBSession *activeSession = [[FBSession activeSession] initWithPermissions:permissions];
+    NSString *videoString = [dataDictionary objectForKey:@"videoUrl"];
+    _currentVideoUrl=videoString;
+    
+    NSString *currentScore = [dataDictionary objectForKey:@"currentScore"];
    
     NSData *videoData = [NSData dataWithContentsOfFile:_currentVideoUrl];
+    
+    NSString *description = [NSMutableString stringWithFormat:@"BEAT MY SCORE : %@ .Download the app at http://goo.gl/NdSYYa",currentScore];
+    
+    
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                    videoData, @"ScreamMovie.mp4",
                                    @"video/quicktime", @"contentType",
-                                   @"Video Test Title", @"title",
-                                   @"Video Test Description", @"description",
+                                   @"SCREAMMETER", @"title",
+                                   description, @"description",
                                    nil];
 
 
@@ -219,7 +233,7 @@ static FBLoginView* loginView;
                                    delegate:nil
                           cancelButtonTitle:@"OK"
                           otherButtonTitles:nil] show];
-
+        [_activitySpinner stopAnimating];
     }
 
 }
@@ -231,6 +245,8 @@ static FBLoginView* loginView;
     
     [request startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
         NSLog(@"result: %@, error: %@", result, error);
+        [_activitySpinner stopAnimating];
+
         if (!error) {
             [[[UIAlertView alloc] initWithTitle:@"Successfully posted"
                                         message:@"Your Video has been posted successfully"

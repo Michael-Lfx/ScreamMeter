@@ -1727,7 +1727,7 @@ typedef void (^PBJVisionBlock)();
                 float *convertedSamples = malloc(numSamples * sizeof(float));
                 vDSP_vflt16((short *)samples, 1, convertedSamples, 1, numSamples);
                 
-                
+                /* 
                 //Testing with calculating sound power
                 UInt32 sampleRate,channelCount=0;
                 UInt64 totalBytes = 0;
@@ -1746,6 +1746,7 @@ typedef void (^PBJVisionBlock)();
                     
                     //    NSLog(@"channels:%u, bytes/packet: %u, sampleRate %f",fmtDesc->mChannelsPerFrame, fmtDesc->mBytesPerPacket,fmtDesc->mSampleRate);
                 }
+             
                 UInt32 bytesPerSample = 2 * channelCount;
 
                 int sampleCount = length / bytesPerSample;
@@ -1769,6 +1770,7 @@ typedef void (^PBJVisionBlock)();
                 if ([_delegate respondsToSelector:@selector(audioPeakPower:andAudioAveragePower:)]) {
                         [_delegate audioPeakPower:peakValue andAudioAveragePower:totalLeft];
                 }
+                */
 
             } else {
                 // handle other cases as required
