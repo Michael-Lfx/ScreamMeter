@@ -37,6 +37,9 @@
 @property(nonatomic,weak)IBOutlet UIButton *mainMenuButton;
 @property(nonatomic,weak)IBOutlet UIButton *watchVideoButton;
 @property(nonatomic,weak)IBOutlet UIButton *facebookShareButton;
+@property(nonatomic,weak)IBOutlet UILabel *currentScoreTextLabel;
+@property(nonatomic,weak)IBOutlet UILabel *screamText;
+@property(nonatomic,weak)IBOutlet UIButton *stopButton;
 
 
 -(IBAction)restartGame:(id)sender;
@@ -104,7 +107,6 @@
     }
     
     sum=sum/N;
-    NSLog(@"%f",sum);
 
     return sum;
 }
@@ -222,6 +224,9 @@
     [_mainMenuButton setHidden:NO];
     [_watchVideoButton setHidden:NO];
     [_facebookShareButton setHidden:NO];
+    [_currentScoreTextLabel setHidden:NO];
+    [_screamText setHidden:YES];
+    [_stopButton setHidden:YES];
     if (_scoreDataModel.highScore < _scoreDataModel.currentScore) {
         
     }else{
@@ -332,14 +337,24 @@
     [self stopSessions];
 }
 
+-(IBAction)endGame:(id)sender {
+    ScreamingGameplayState=ScreamingStoppedState;
+    [self stopSessions];
+}
+
 -(void)stopSessions{
     [_recorder stop];
     _recorder=nil;
     
+    /*
+    if([_flashLight isTorchAvailable] && [_flashLight isTorchModeSupported:AVCaptureTorchModeOn]) {
+
     [_flashLight lockForConfiguration:nil];
     [_flashLight setTorchMode:AVCaptureTorchModeOff];
     [_flashLight unlockForConfiguration];
     _flashLight=nil;
+    }
+    */
     
     [_levelTimer invalidate];
     _levelTimer=nil;
@@ -353,14 +368,19 @@
     
     for (UIImageView *redImageView in _redLightsImageViewArray) {
             [redImageView setImage:nil];
+        [redImageView setHidden:YES];
     }
     
     for (UIImageView *yellowImageView in _yellowLightsImageViewArray) {
             [yellowImageView setImage:nil];
+        [yellowImageView setHidden:YES];
+
     }
     
     for (UIImageView *greenImageView in _greenLightsImageViewArray) {
             [greenImageView setImage:nil];
+        [greenImageView setHidden:YES];
+
     }
     
         
@@ -371,13 +391,29 @@
 }
 
 
+-(void)showMeter {
+    
+    for (UIImageView *redImageView in _redLightsImageViewArray) {
+        [redImageView setHidden:NO];
+    }
+    
+    for (UIImageView *yellowImageView in _yellowLightsImageViewArray) {
+        [yellowImageView setHidden:NO];
+        
+    }
+    
+    for (UIImageView *greenImageView in _greenLightsImageViewArray) {
+        [greenImageView setHidden:NO];
+        
+    }
+}
 
 
 -(void)startSessions{
 
-    [self initCameraLight];
+   // [self initCameraLight];
    // _levelTimer = [NSTimer scheduledTimerWithTimeInterval: 0.05 target: self selector: @selector(receivedPeakPower:) userInfo: nil repeats: YES];
-
+    [self showMeter];
     [self initAudio];
     _scoreDataModel=[[ScoreDataModel alloc]init];
     [_restartButton setHidden:YES];
@@ -386,7 +422,9 @@
     [_bestLabel setHidden:YES];
     [_highScoreLabel setHidden:YES];
     [_facebookShareButton setHidden:YES];
-    
+    [_currentScoreTextLabel setHidden:YES];
+    [_screamText setHidden:NO];
+    [_stopButton setHidden:NO];
     ScreamingGameplayState=ScreamingNotStartedState;
     
     _currentScoreLabel.text = _scoreDataModel.currentScoreString;
@@ -463,14 +501,7 @@
 }
 
 -(void)initCameraLight{
-    /*
-    UISlider *slider = [[UISlider alloc] initWithFrame:CGRectMake(20.0f, 20.0f, 280.0f, 40.0f)];
-    slider.maximumValue = 1.0f;
-    slider.minimumValue = 0.0f;
-    [slider setContinuous:YES];
-    [slider addTarget:self action:@selector(sliderDidChange:) forControlEvents:UIControlEventValueChanged];
-    [self.view addSubview:slider];
-    */
+   /*
     _flashLight = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     if([_flashLight isTorchAvailable] && [_flashLight isTorchModeSupported:AVCaptureTorchModeOn])
     {
@@ -481,11 +512,13 @@
             [_flashLight unlockForConfiguration];
         }
     }
+    */
 
 }
 
 - (void)sliderDidChange:(UISlider *)slider
 {
+    /*
     _flashLight = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     if([_flashLight isTorchAvailable] && [_flashLight isTorchModeSupported:AVCaptureTorchModeOn]){
         [_flashLight lockForConfiguration:nil];
@@ -498,6 +531,8 @@
         }
         [_flashLight unlockForConfiguration];
     }
+    
+    */
 }
 
 

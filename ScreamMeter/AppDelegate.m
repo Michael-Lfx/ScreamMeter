@@ -13,6 +13,7 @@
 #import "iAd/ADBannerView.h"
 #import "MMInterstitial.h"
 #import "Flurry.h"
+#import "TestFlight.h"
 
 @implementation AppDelegate
 
@@ -20,7 +21,8 @@
 {
     // Override point for customization after application launch.
     
-    
+    [TestFlight takeOff:@"3fbb8b66-f26c-4d97-a35d-07e25a52a34e"];
+
     [FBLoginView class];
     [FBProfilePictureView class];
     [self fetchMMediaInterstatialAd];
